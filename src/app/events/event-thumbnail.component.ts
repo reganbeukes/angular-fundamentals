@@ -1,7 +1,7 @@
 import { Component , Input} from "@angular/core";
 
 @Component({
-    selector: 'event-thumbnail'
+    selector: 'event-thumbnail',
     template: `
     <div [routerLink]="['/events',event.id]" class="well hoverwell thumbnail">
         <h2>{{event?.name}}</h2>
