@@ -42,5 +42,7 @@ import { EventRouteActivator  } from "./events/event-details/event-route-activat
 export class AppModule { }
 
 export function checkDirtyState(component: CreateEventComponent) {
-  return false;
+  if(component.isDirty)
+      return window.confir,("You have not saved this event , do you really want to cancel?")
+    return true;
 }
