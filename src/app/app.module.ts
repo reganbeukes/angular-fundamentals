@@ -21,6 +21,7 @@ import { ToastrService  } from './common/toastr.service'
 import { appRoutes } from './routes';
 import { Error404Component } from "./errors/404.component";
 import { AuthService } from './user/auth.service';
+import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/forms';
 
 
 
@@ -29,6 +30,8 @@ import { AuthService } from './user/auth.service';
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   declarations: [
