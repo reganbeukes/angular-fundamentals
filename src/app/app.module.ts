@@ -9,11 +9,13 @@ import {
   EventDetailsComponent,
   CreateEventComponent,
   EventRouteActivator,
-  EventListResolver
+  EventListResolver,
+  CreateSessionComponent,
+  SessionListComponent
 
 
 
-} from './events/index';
+} from './events';
 
 import { EventsAppComponent } from "./events-app.component";
 import { NavBarComponent } from './nav/navbar.component';
@@ -21,7 +23,7 @@ import { ToastrService  } from './common/toastr.service'
 import { appRoutes } from './routes';
 import { Error404Component } from "./errors/404.component";
 import { AuthService } from './user/auth.service';
-import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -40,6 +42,8 @@ import { FormsModule, ReactiveFormsModule } from '../../node_modules/@angular/fo
     EventThumbnailComponent,
     EventDetailsComponent,
     CreateEventComponent,
+    CreateSessionComponent,
+    SessionListComponent,
     NavBarComponent,
     Error404Component    
   ],
